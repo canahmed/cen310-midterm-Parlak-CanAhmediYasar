@@ -1,4 +1,4 @@
-# Calculator Project Library Generation and Testing Template
+# teamManager Project Library Generation and Testing Template
 
 ## Overview
 
@@ -20,7 +20,7 @@ Run 1-configure-pre-commit.bat file to copy 1-pre-commit script to .git/hooks th
 
 ### Step-2 (Run on Windows, Can Effect on WSL)
 
-If gitignore missing then you can create gitignore with 2-create-git-ignore.bat file run this file.
+If gitignore missing then you Can create gitignore with 2-create-git-ignore.bat file run this file.
 
 ### Step-3 (Only Windows)
 
@@ -38,7 +38,7 @@ Open powershell as admin and enter WSL then goto project folder and run 4-instal
 
 ## Generate Development Environment
 
-You can run 9-clean-configure-app-windows.bat to generate Visual Studio Communit Edition Project of this file. Or You can use Cmake project development with Visual Studio Community Edition
+You Can run 9-clean-configure-app-windows.bat to generate Visual Studio Communit Edition Project of this file. Or You Can use Cmake project development with Visual Studio Community Edition
 
 
 
@@ -48,7 +48,7 @@ Run 7-build-app-windows.bat to build, test and generate packed binaries for your
 
 
 
-Also you can run 7-build-doc-windows.bat to only generate documentation and 8-build-test-windows.bat to only test application. 
+Also you Can run 7-build-doc-windows.bat to only generate documentation and 8-build-test-windows.bat to only test application. 
 
 ## Build, Test and Package Application on WSL
 
@@ -58,7 +58,7 @@ Run 7-build-app-linux.sh to build, test and generate packed binaries for your ap
 
 ## Clean Project
 
-You can run 9-clean-project.bat to clean project outputs. 
+You Can run 9-clean-project.bat to clean project outputs. 
 
 
 
@@ -142,11 +142,11 @@ We have already configured script for build operations. `7-build-app-windows.bat
 
 We are running WSL on Windows 10 and solve our virtual machine problem. We make cross-platform development. After development before commit we run and test app on Windows and WSL with this scripts. To run on WSL you need to install WSL first. 
 
-you can use our public notes
+you Can use our public notes
 
-- https://github.com/coruhtech/vs-docker-wsl-cpp-development
+- https://github.com/Cantech/vs-docker-wsl-cpp-development
 
-- [GitHub - ucoruh/ns3-wsl-win10-setup: ns3 windows 10 WSL2 setup and usage](https://github.com/ucoruh/ns3-wsl-win10-setup)
+- [GitHub - uCan/ns3-wsl-win10-setup: ns3 windows 10 WSL2 setup and usage](https://github.com/uCan/ns3-wsl-win10-setup)
 
 After WSL installation, right click and open WSL bash and run `7-build-app-linux.sh` this will provide similart task with windows and will generate report and libraries on release folder. 
 

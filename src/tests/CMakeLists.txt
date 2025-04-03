@@ -11,6 +11,7 @@ set(GTEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/googletest)
 # Add GoogleTest as a subdirectory
 add_subdirectory(${GTEST_DIR} ${CMAKE_CURRENT_BINARY_DIR}/googletest-build EXCLUDE_FROM_ALL)
 
+
 # Include the Google Test framework
 include_directories(${GTEST_DIR}/googletest/include)
 # ----------------------------------------------------------------------------------
@@ -37,8 +38,8 @@ if(ENABLE_UTILITY)
 	add_subdirectory(utility)
 endif()
 
-# Calculator tests
-if(ENABLE_CALCULATOR)
-	add_subdirectory(calculator)
+# teamManager tests
+if(ENABLE_teamManager)
+	add_subdirectory(teamManager)
 endif()
 

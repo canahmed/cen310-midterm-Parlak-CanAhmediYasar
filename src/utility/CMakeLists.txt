@@ -37,7 +37,7 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/commonTypes.h
               ${CMAKE_CURRENT_SOURCE_DIR}/header/mathUtility.h
         DESTINATION include)
 
-# Export the crypto target so other modules can use it
+# Export the crypto target so other modules Can use it
 # export(TARGETS ${LIBNAME} FILE ${LIBNAME}Targets.cmake)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")
