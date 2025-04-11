@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_coruh_1_1team_manager_1_1team_manager" kind="class" language="C++" prot="public">
+    <compoundname>Coruh::teamManager::teamManager</compoundname>
+    <includes refid="team_manager_8h" local="no">teamManager.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_coruh_1_1team_manager_1_1team_manager_1a1c25336cd33145de98abc9b9d83d0c33" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double teamManager::add</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>add</name>
+        <qualifiedname>Coruh::teamManager::teamManager::add</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds two numbers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First operand. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second operand. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of a and b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="26" column="17" bodyfile=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/src/teamManager.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1team_manager_1_1team_manager_1ac58f2479eae83690aa30e1ee7f26ce02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double teamManager::subtract</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>subtract</name>
+        <qualifiedname>Coruh::teamManager::teamManager::subtract</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtracts the second number from the first. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minuend. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subtrahend. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of a - b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="34" column="17" bodyfile=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/src/teamManager.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1team_manager_1_1team_manager_1a8b0fef0c7b2f623b32bdaa214b90be2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double teamManager::multiply</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>multiply</name>
+        <qualifiedname>Coruh::teamManager::teamManager::multiply</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies two numbers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First operand. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second operand. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of a and b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="42" column="17" bodyfile=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/src/teamManager.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coruh_1_1team_manager_1_1team_manager_1a5394971841698289aa231b53149afe35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double teamManager::divide</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>divide</name>
+        <qualifiedname>Coruh::teamManager::teamManager::divide</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divides the first number by the second. Throws std::invalid_argument if the second number is zero. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dividend. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Divisor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of a / b. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If b is zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="52" column="17" bodyfile=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/src/teamManager.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides Basic functions for various operations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Coruh::teamManager::teamManager</label>
+        <link refid="class_coruh_1_1team_manager_1_1team_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="18" column="1" bodyfile=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" bodystart="18" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_coruh_1_1team_manager_1_1team_manager_1a1c25336cd33145de98abc9b9d83d0c33" prot="public" virt="non-virtual"><scope>Coruh::teamManager::teamManager</scope><name>add</name></member>
+      <member refid="class_coruh_1_1team_manager_1_1team_manager_1a5394971841698289aa231b53149afe35" prot="public" virt="non-virtual"><scope>Coruh::teamManager::teamManager</scope><name>divide</name></member>
+      <member refid="class_coruh_1_1team_manager_1_1team_manager_1a8b0fef0c7b2f623b32bdaa214b90be2e" prot="public" virt="non-virtual"><scope>Coruh::teamManager::teamManager</scope><name>multiply</name></member>
+      <member refid="class_coruh_1_1team_manager_1_1team_manager_1ac58f2479eae83690aa30e1ee7f26ce02" prot="public" virt="non-virtual"><scope>Coruh::teamManager::teamManager</scope><name>subtract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

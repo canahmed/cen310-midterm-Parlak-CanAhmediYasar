@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="team_managerapp_8h" kind="file" language="C++">
+    <compoundname>teamManagerapp.h</compoundname>
+    <briefdescription>
+<para>teamManager Application header file </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>teamManager_APP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>teamManager_APP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>teamManager_APP_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/header/teamManagerapp.h"/>
+  </compounddef>
+</doxygen>

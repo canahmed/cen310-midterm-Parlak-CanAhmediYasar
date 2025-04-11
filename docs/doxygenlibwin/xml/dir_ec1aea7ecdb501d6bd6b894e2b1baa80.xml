@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_ec1aea7ecdb501d6bd6b894e2b1baa80" kind="dir">
+    <compoundname> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar</compoundname>
+    <innerdir refid="dir_caee31ddf6bf989a36a49ba1db01809b"> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/"/>
+  </compounddef>
+</doxygen>

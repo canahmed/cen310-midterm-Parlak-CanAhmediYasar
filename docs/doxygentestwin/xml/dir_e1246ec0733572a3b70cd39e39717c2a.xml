@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_e1246ec0733572a3b70cd39e39717c2a" kind="dir">
+    <compoundname> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/tests</compoundname>
+    <innerdir refid="dir_423de0d6c39062f366a531a9febb1357"> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/tests/teamManager</innerdir>
+    <innerdir refid="dir_418068a974bbac2e5aa9a60b28ffd16c"> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/tests/utility</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/tests/"/>
+  </compounddef>
+</doxygen>

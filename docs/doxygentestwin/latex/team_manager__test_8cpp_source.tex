@@ -1,0 +1,56 @@
+\doxysection{team\+Manager\+\_\+test.\+cpp}
+\hypertarget{team_manager__test_8cpp_source}{}\label{team_manager__test_8cpp_source}\index{ Ahmed/Desktop/cen310-\/midterm-\/Parlak-\/CanAhmediYasar/src/tests/teamManager/teamManager\_test.cpp@{ Ahmed/Desktop/cen310-\/midterm-\/Parlak-\/CanAhmediYasar/src/tests/teamManager/teamManager\_test.cpp}}
+\mbox{\hyperlink{team_manager__test_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00001}00001\ \textcolor{comment}{//\#define\ ENABLE\_teamManager\_TEST\ \ //\ Uncomment\ this\ line\ to\ enable\ the\ teamManager\ tests}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}gtest/gtest.h"{}}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}../../teamManager/header/teamManager.h"{}}\ \ \textcolor{comment}{//\ Adjust\ this\ include\ path\ based\ on\ your\ project\ structure}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00006}00006\ \textcolor{keyword}{using\ namespace\ }Can::teamManager;}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00008}\mbox{\hyperlink{classteam_manager_test}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00009}00009\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00010}\mbox{\hyperlink{classteam_manager_test_a43e81516ff2107047002effa44d29c5d}{00010}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classteam_manager_test_a43e81516ff2107047002effa44d29c5d}{SetUp}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{comment}{//\ Setup\ test\ data}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00012}00012\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00014}\mbox{\hyperlink{classteam_manager_test_a5190251409b9b6015d6086b9527cab28}{00014}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classteam_manager_test_a5190251409b9b6015d6086b9527cab28}{TearDown}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ Clean\ up\ test\ data}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00016}00016\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00017}00017\ \};}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00019}\mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{00019}}\ \mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{TEST\_F}}(\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}},\ TestAdd)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00020}00020\ \ \ \textcolor{keywordtype}{double}\ result\ =\ teamManager::add(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00021}00021\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 8.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00024}\mbox{\hyperlink{team_manager__test_8cpp_aae24493a5a31416620d70631a5e0d76e}{00024}}\ \mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{TEST\_F}}(\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}},\ TestSubtract)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00025}00025\ \ \ \textcolor{keywordtype}{double}\ result\ =\ teamManager::subtract(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00026}00026\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 2.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00029}\mbox{\hyperlink{team_manager__test_8cpp_a01edbd9956f6aea669d26efa202518a5}{00029}}\ \mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{TEST\_F}}(\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}},\ TestMultiply)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00030}00030\ \ \ \textcolor{keywordtype}{double}\ result\ =\ teamManager::multiply(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00031}00031\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 15.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00034}\mbox{\hyperlink{team_manager__test_8cpp_a12cc042beac7aa1a517b98e49d12f7ef}{00034}}\ \mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{TEST\_F}}(\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}},\ TestDivide)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00035}00035\ \ \ \textcolor{keywordtype}{double}\ result\ =\ teamManager::divide(6.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00036}00036\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 2.0);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00039}\mbox{\hyperlink{team_manager__test_8cpp_a73aed948ce3ba4acfbd923777ac8e9f6}{00039}}\ \mbox{\hyperlink{team_manager__test_8cpp_ac7d021e638634b4c1f1977b3a6c0ac9f}{TEST\_F}}(\mbox{\hyperlink{classteam_manager_test}{teamManagerTest}},\ TestDivideByZero)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00040}00040\ \ \ EXPECT\_THROW(teamManager::divide(5.0,\ 0.0),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00050}\mbox{\hyperlink{team_manager__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{00050}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{team_manager__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ **argv)\ \{}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00051}00051\ \textcolor{preprocessor}{\#ifdef\ ENABLE\_teamManager\_TEST}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00052}00052\ \ \ ::testing::InitGoogleTest(\&argc,\ argv);}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00053}00053\ \ \ \textcolor{keywordflow}{return}\ RUN\_ALL\_TESTS();}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00054}00054\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00055}00055\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00056}00056\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{team_manager__test_8cpp_source_l00057}00057\ \}}
+
+\end{DoxyCode}

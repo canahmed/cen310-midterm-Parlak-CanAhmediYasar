@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_coruh_1_1team_manager" kind="namespace" language="C++">
+    <compoundname>Coruh::teamManager</compoundname>
+    <innerclass refid="class_coruh_1_1team_manager_1_1team_manager" prot="public">Coruh::teamManager::teamManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header/teamManager.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

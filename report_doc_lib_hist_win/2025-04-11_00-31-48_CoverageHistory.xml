@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2025-04-11_00-31-48" tag="">
+  <assembly name="Default">
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\teamManagerapp\header\teamManagerapp.h" coveredlines="1" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\teamManagerapp\src\teamManager\header\teamManager.h" coveredlines="6" coverablelines="8" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\teamManagerapp\src\teamManager\src\teamManager.cpp" coveredlines="0" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\teamManagerapp\src\teamManagerapp.cpp" coveredlines="0" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\utility\header\commonTypes.h" coveredlines="1" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\utility\header\monte_carlo_pi.h" coveredlines="0" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+    <class name="C:\Users\Can Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\ Ahmed\Desktop\cen310-midterm-Parlak-CanAhmediYasar\src\utility\src\monte_carlo_pi.cpp" coveredlines="0" coverablelines="1" totallines="0" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="0" />
+  </assembly>
+</coverage>

@@ -1,0 +1,112 @@
+\doxysection{Coruh\+::team\+Manager\+::team\+Manager Class Reference}
+\hypertarget{class_coruh_1_1team_manager_1_1team_manager}{}\label{class_coruh_1_1team_manager_1_1team_manager}\index{Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}}
+
+
+Provides Basic functions for various operations.  
+
+
+
+
+{\ttfamily \#include $<$team\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Coruh\+::team\+Manager\+::team\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_coruh_1_1team_manager_1_1team_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_coruh_1_1team_manager_1_1team_manager_a1c25336cd33145de98abc9b9d83d0c33}{add}} (double a, double b)
+\item 
+static double \mbox{\hyperlink{class_coruh_1_1team_manager_1_1team_manager_ac58f2479eae83690aa30e1ee7f26ce02}{subtract}} (double a, double b)
+\item 
+static double \mbox{\hyperlink{class_coruh_1_1team_manager_1_1team_manager_a8b0fef0c7b2f623b32bdaa214b90be2e}{multiply}} (double a, double b)
+\item 
+static double \mbox{\hyperlink{class_coruh_1_1team_manager_1_1team_manager_a5394971841698289aa231b53149afe35}{divide}} (double a, double b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides Basic functions for various operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_coruh_1_1team_manager_1_1team_manager_a1c25336cd33145de98abc9b9d83d0c33}\label{class_coruh_1_1team_manager_1_1team_manager_a1c25336cd33145de98abc9b9d83d0c33} 
+\index{Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}!add@{add}}
+\index{add@{add}!Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily double team\+Manager\+::add (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds two numbers. 
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand. \\
+\hline
+{\em b} & Second operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sum of a and b. 
+\end{DoxyReturn}
+\Hypertarget{class_coruh_1_1team_manager_1_1team_manager_a5394971841698289aa231b53149afe35}\label{class_coruh_1_1team_manager_1_1team_manager_a5394971841698289aa231b53149afe35} 
+\index{Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}!divide@{divide}}
+\index{divide@{divide}!Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily double team\+Manager\+::divide (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Divides the first number by the second. Throws std\+::invalid\+\_\+argument if the second number is zero. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Dividend. \\
+\hline
+{\em b} & Divisor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of a / b. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If b is zero. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_coruh_1_1team_manager_1_1team_manager_a8b0fef0c7b2f623b32bdaa214b90be2e}\label{class_coruh_1_1team_manager_1_1team_manager_a8b0fef0c7b2f623b32bdaa214b90be2e} 
+\index{Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}!multiply@{multiply}}
+\index{multiply@{multiply}!Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily double team\+Manager\+::multiply (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Multiplies two numbers. 
+\begin{DoxyParams}{Parameters}
+{\em a} & First operand. \\
+\hline
+{\em b} & Second operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The product of a and b. 
+\end{DoxyReturn}
+\Hypertarget{class_coruh_1_1team_manager_1_1team_manager_ac58f2479eae83690aa30e1ee7f26ce02}\label{class_coruh_1_1team_manager_1_1team_manager_ac58f2479eae83690aa30e1ee7f26ce02} 
+\index{Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}!subtract@{subtract}}
+\index{subtract@{subtract}!Coruh::teamManager::teamManager@{Coruh::teamManager::teamManager}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily double team\+Manager\+::subtract (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Subtracts the second number from the first. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Minuend. \\
+\hline
+{\em b} & Subtrahend. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of a -\/ b. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ Ahmed/\+Desktop/cen310-\/midterm-\/\+Parlak-\/\+Can\+Ahmedi\+Yasar/src/team\+Managerapp/src/team\+Manager/header/\mbox{\hyperlink{team_manager_8h}{team\+Manager.\+h}}\item 
+ Ahmed/\+Desktop/cen310-\/midterm-\/\+Parlak-\/\+Can\+Ahmedi\+Yasar/src/team\+Managerapp/src/team\+Manager/src/\mbox{\hyperlink{team_manager_8cpp}{team\+Manager.\+cpp}}\end{DoxyCompactItemize}

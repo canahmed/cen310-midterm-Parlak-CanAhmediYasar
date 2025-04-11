@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_coruh_1_1team_manager_1_1team_manager" kind="class"><name>Coruh::teamManager::teamManager</name>
+    <member refid="class_coruh_1_1team_manager_1_1team_manager_1a1c25336cd33145de98abc9b9d83d0c33" kind="function"><name>add</name></member>
+    <member refid="class_coruh_1_1team_manager_1_1team_manager_1ac58f2479eae83690aa30e1ee7f26ce02" kind="function"><name>subtract</name></member>
+    <member refid="class_coruh_1_1team_manager_1_1team_manager_1a8b0fef0c7b2f623b32bdaa214b90be2e" kind="function"><name>multiply</name></member>
+    <member refid="class_coruh_1_1team_manager_1_1team_manager_1a5394971841698289aa231b53149afe35" kind="function"><name>divide</name></member>
+  </compound>
+  <compound refid="namespace_coruh" kind="namespace"><name>Coruh</name>
+  </compound>
+  <compound refid="namespace_coruh_1_1team_manager" kind="namespace"><name>Coruh::teamManager</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="team_managerapp_8h" kind="file"><name>teamManagerapp.h</name>
+  </compound>
+  <compound refid="team_manager_8h" kind="file"><name>teamManager.h</name>
+  </compound>
+  <compound refid="team_manager_8cpp" kind="file"><name>teamManager.cpp</name>
+  </compound>
+  <compound refid="team_managerapp_8cpp" kind="file"><name>teamManagerapp.cpp</name>
+  </compound>
+  <compound refid="common_types_8h" kind="file"><name>commonTypes.h</name>
+  </compound>
+  <compound refid="monte__carlo__pi_8h" kind="file"><name>monte_carlo_pi.h</name>
+  </compound>
+  <compound refid="monte__carlo__pi_8cpp" kind="file"><name>monte_carlo_pi.cpp</name>
+  </compound>
+  <compound refid="dir_909f2d8eced2fc0f95c4e73b28a8363b" kind="dir"><name> Ahmed</name>
+  </compound>
+  <compound refid="dir_ec1aea7ecdb501d6bd6b894e2b1baa80" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar</name>
+  </compound>
+  <compound refid="dir_1cc440524e7f7fca440a2bd4029a9680" kind="dir"><name> Ahmed/Desktop</name>
+  </compound>
+  <compound refid="dir_653f434c0a7d94e45490e96e215a18cc" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/header</name>
+  </compound>
+  <compound refid="dir_c62dd16f40bcb2f0f64237ed2717e3fc" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/header</name>
+  </compound>
+  <compound refid="dir_6d758108c1a2fabadf6612e0ed644ce1" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/utility/header</name>
+  </compound>
+  <compound refid="dir_caee31ddf6bf989a36a49ba1db01809b" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src</name>
+  </compound>
+  <compound refid="dir_3d7f64e06db27ebd74b13c86b58eba97" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src</name>
+  </compound>
+  <compound refid="dir_3e89a39dc62c08f41d74676c8771741f" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager/src</name>
+  </compound>
+  <compound refid="dir_133d476fa6af93cd7a901f2c36223ff5" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/utility/src</name>
+  </compound>
+  <compound refid="dir_aae0209e761f1d2607daacf916299098" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp/src/teamManager</name>
+  </compound>
+  <compound refid="dir_7f0526c149a81b7d83106f4c74e68e40" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/teamManagerapp</name>
+  </compound>
+  <compound refid="dir_a9a4f1c905590d6f945f0c4c516d0408" kind="dir"><name> Ahmed/Desktop/cen310-midterm-Parlak-CanAhmediYasar/src/utility</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

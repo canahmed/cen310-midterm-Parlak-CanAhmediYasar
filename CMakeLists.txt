@@ -1,121 +1,129 @@
 # Set the minimum required CMake version
 cmake_minimum_required(VERSION 3.12)
-project(teamManagerapp)
+project(monte_carlo_pi)
 
-set(ROOT src)
+# Set source directory
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # Print useful information
-message(STATUS "[${ROOT}] CMake version ${CMAKE_VERSION}")
-message(STATUS "[${ROOT}] System ${CMAKE_SYSTEM_NAME}")
-message(STATUS "[${ROOT}] Processor ${CMAKE_SYSTEM_PROCESSOR}")
+message(STATUS "[src] CMake version ${CMAKE_VERSION}")
+message(STATUS "[src] System ${CMAKE_SYSTEM_NAME}")
+message(STATUS "[src] Processor ${CMAKE_SYSTEM_PROCESSOR}")
+message(STATUS "[src] C++ standard version: ${CMAKE_CXX_STANDARD}")
 
-# GoogleTest requires at least C++11
-if(NOT "${CMAKE_CXX_STANDARD}")
-  set(CMAKE_CXX_STANDARD 11)
-  message(STATUS "[${ROOT}] Default C++ Standard Selected: ${CMAKE_CXX_STANDARD}")
-endif()
-
-message(STATUS "[${ROOT}] C++ standard version: ${CMAKE_CXX_STANDARD}")
-
-# Set the default installation directory
-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    set(CMAKE_INSTALL_PREFIX "${PROJECT_BINARY_DIR}/install" CACHE PATH "Default installation directory" FORCE)
-endif()
-
-message(STATUS "[${ROOT}] Folder is set to : ${CMAKE_INSTALL_PREFIX}")
-
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Set installation directory
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install)
+message(STATUS "[src] Folder is set to : ${CMAKE_INSTALL_PREFIX}")
 
 # Enable testing
 enable_testing()
 
-# Set build configurations
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
-
-#crypto++ settings, disable testing, documentation generation, install and DLL generation
-set(CRYPTOPP_BUILD_TESTING OFF)
-set(CRYPTOPP_BUILD_DOCUMENTATION OFF)
-set(CRYPTOPP_INSTALL ON)
-set(CRYPTOPP_BUILD_SHARED OFF)
-set(CRYPTOPP_USE_MASTER_BRANCH FALSE)
-
-option(ENABLE_UTILITY "Enable Utility Module" ON)
-option(ENABLE_teamManager "Enable teamManager Module" ON)
-option(ENABLE_teamManager_APP "Enable teamManager Application" ON)
-option(ENABLE_TESTS "Enable All Tests" ON)
-
-# Configure tests
-add_compile_definitions(ENABLE_UTILITY_TEST)
-add_compile_definitions(ENABLE_teamManager_TEST)
-
-
-# Configure logs
-add_compile_definitions(ENABLE_UTILITY_LOGGER)
-add_compile_definitions(ENABLE_teamManager_LOGGER)
-
-# Set the output directories for Debug and Release configurations
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/build/Debug)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/build/Release)
-
-# Custom definitions based on environment
+# Add code coverage support for MSVC
 if(MSVC)
-  add_definitions(-DMSVC_ENV)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /O0 /profile")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /PROFILE")
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX)
-  add_definitions(-DGCC_ENV)
+# Add Google Test
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG release-1.12.1
+)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+# Find OpenMP
+find_package(OpenMP REQUIRED)
+if(OpenMP_CXX_FOUND)
+    message(STATUS "OpenMP found")
 endif()
 
-if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-  add_definitions(-DMAC_ENV)
+# Set output directories
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+# Set compiler flags
+if(MSVC)
+    add_compile_options(/W4 /WX)
+    if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+        add_compile_options(/EHsc)
+    endif()
 endif()
 
-# Set Debug and Release configuration flags
-if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
-  message(STATUS "[${ROOT}] Setting Ubuntu/MacOS C/C++ Flags")
+# Add Monte Carlo Pi library
+add_library(monte_carlo_pi_lib STATIC
+    ${SRC_DIR}/lib/monte_carlo_pi.cpp
+)
+target_include_directories(monte_carlo_pi_lib PUBLIC ${SRC_DIR}/lib)
+target_link_libraries(monte_carlo_pi_lib PUBLIC OpenMP::OpenMP_CXX)
 
-  set(COMP_WARNINGS "-Wall -Wextra -Wunused-function -Wno-unknown-pragmas")
-  set(COMP_PROFILE "-fprofile-arcs -ftest-coverage")
-  set(COMP_OPTIMIZATION "-O0") #for debugging
-  set(COMP_SHARED "-shared -fPIC")
-
-  set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g ${COMP_OPTIMIZATION} ${COMP_WARNINGS} ${COMP_PROFILE}")
-  set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g ${COMP_OPTIMIZATION} ${COMP_WARNINGS} ${COMP_PROFILE}")
-
-  set(CMAKE_EXE_LINKER_FLAGS_DEBUG "${CMAKE_EXE_LINKER_FLAGS_DEBUG} ${COMP_WARNINGS} ${COMP_PROFILE}")
-  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${COMP_WARNINGS} ${COMP_PROFILE}")
-
-elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
-  message(STATUS "[${ROOT}] Setting Windows C/C++ Flags")
-  set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
-  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
-else()
-  message(WARNING "[${ROOT}] Not supported with the current compiler.")
+# Set static runtime for non-GUI targets
+if(MSVC)
+    set_property(TARGET monte_carlo_pi_lib PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 endif()
 
-
-
-# Utility submodule
-if(ENABLE_UTILITY)
-	add_subdirectory(${ROOT}/utility)
+# Add GUI application
+add_executable(monte_carlo_pi_app
+    ${SRC_DIR}/app/monte_carlo_pi_app.cpp
+)
+target_link_libraries(monte_carlo_pi_app PRIVATE monte_carlo_pi_lib)
+if(MSVC)
+    # GUI uygulaması için CLR desteği
+    set_target_properties(monte_carlo_pi_app PROPERTIES
+        VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.7.2"
+        VS_GLOBAL_CLRSupport "true"
+        COMPILE_FLAGS "/clr"
+        LINK_FLAGS "/SUBSYSTEM:WINDOWS"
+    )
+    
+    # GUI uygulaması için dinamik çalışma zamanı kütüphanesi
+    set_property(TARGET monte_carlo_pi_app PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreadedDLL$<$<CONFIG:Debug>:Debug>")
+    
+    # GUI uygulaması için özel derleyici bayrakları
+    target_compile_options(monte_carlo_pi_app PRIVATE /EHa)
+    
+    # GUI uygulaması için /RTC seçeneklerini devre dışı bırak
+    target_compile_options(monte_carlo_pi_app PRIVATE /RTC-)
+    
+    # GUI uygulaması için /RTC1 seçeneğini devre dışı bırak (alternatif yöntem)
+    set_property(TARGET monte_carlo_pi_app PROPERTY
+        VS_GLOBAL_RuntimeLibrary "MultiThreadedDLL$<$<CONFIG:Debug>:Debug>")
+    set_property(TARGET monte_carlo_pi_app PROPERTY
+        VS_GLOBAL_EnableManagedIncrementalBuild "false")
+    
+    # GUI uygulaması için /RTC1 seçeneğini devre dışı bırak (doğrudan yöntem)
+    set_property(TARGET monte_carlo_pi_app PROPERTY
+        VS_GLOBAL_BasicRuntimeChecks "Default")
 endif()
 
-# Logger submodule
-if(ENABLE_teamManager)
-	add_subdirectory(${ROOT}/teamManager)
+# Add test executable
+add_executable(monte_carlo_pi_test
+    ${SRC_DIR}/tests/monte_carlo_pi_test.cpp
+)
+target_link_libraries(monte_carlo_pi_test PRIVATE
+    monte_carlo_pi_lib
+    GTest::gtest_main
+)
+
+# Set static runtime for test executable
+if(MSVC)
+    set_property(TARGET monte_carlo_pi_test PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 endif()
 
-# BigInteger for Crypto submodule
-if(ENABLE_teamManager_APP)
-	add_subdirectory(${ROOT}/teamManagerapp)
-endif()
-
-# Tests
-if(ENABLE_TESTS)
-	add_subdirectory(${ROOT}/tests)
-endif()
-
-# Include the Google Test framework
-# add_subdirectory(src/tests/googletest)
+add_test(NAME monte_carlo_pi_test COMMAND monte_carlo_pi_test)
+set_tests_properties(monte_carlo_pi_test PROPERTIES
+    PASS_REGULAR_EXPRESSION "All tests passed"
+    FAIL_REGULAR_EXPRESSION "Failed"
+)
 
 
